@@ -1,204 +1,98 @@
-*{
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     vertical-align: baseline;
- }
- 
- body {
-     text-align: center;
-     font-family: sans-serif;
- }
- 
- .head {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     height: 63px;
-     background: #171717;
-     position: fixed;
-     width: 100%;
-     z-index: 100;
- }
- 
- .navbar {
-     display: flex;
-     margin-right: 10px;
- }
- 
- .logo {
-     margin-left: 30px;
- }
- 
- .logo a {
-     text-decoration: none;
-     color: #fff;
-     text-transform: uppercase;
-     font-size: 20px;
- }
- 
- .navbar a {
-     display: block;
-     padding: 20px 20px;
-     color: #fff;
-     text-decoration: none;
-     text-transform: uppercase;
-     font-size: 20px;
- }
- 
- .navbar a:hover {
-     background: #3f3f3f;
- }
- 
- .header {
-     display: flex;
-     justify-content: center;
-     align-items: center;
- 
- }
- 
- .header {
-     height: 60vh !important;
-     background: url(img/home2.jpg) no-repeat center;
-     background-size: cover;
- }
- 
- .title {
-     margin-bottom: 40px;
-     font-size: 60px;
-     font-weight: 600;
-     text-transform: uppercase;
-     color: #fff;
- }
- 
- p {
-     margin-bottom: 40px;
-     font-size: 18px;
-     color: #fff;
-     padding: 0 100px;
- }
- 
- .btn {
-     display: inline-block;
-     margin-top: 15px;
-     padding: 10px 40px;
-     border: 2px solid #0D0D0D;
-     color: #fff;
-     border-radius: 1rem;
-     text-decoration: none;
-     background: #2742b0;
- }
- 
- .btn:hover {
-     background: none;
-     
- }
- 
- .btn-home {
-     display: flex;
- }
- 
- .btn-home a {
-     margin: 0 10px;
- }
- 
- 
- .content {
-     height: 50vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
- 
- .sau {
-     padding: 30px;
-     background: #1f1d1d
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
- .box-container {
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
-     text-align: center;
+body {
+    font-family: 'ceviche' sans-serif;
+    background-image: url("https://w0.peakpx.com/wallpaper/625/9/HD-wallpaper-grunge-metal-plate-metal-textures-grunge-gray-metal-background-metal-plate-metal-backgrounds.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 100px;
+    padding-top: 50px;
+    color: #732002;
+}
+
+.slider-box {
+    border-radius: 1rem;
+    width:  1000px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #ffffff;
+}
+
+.texto h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+@keyframes slide {
  
- }
- 
- .box-container .box {
-     height: 20rem;
-     width: 17rem;
-     background: #101010;
-     text-align: center;
-     border-radius: 1rem;
-     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
-     margin: 2rem;   
- }
- 
- .box-container .box i {
-     height: 3rem;
-     width: 3rem;
-     line-height: 3rem;
-     text-align: center;
-     border-radius: 50%;
-     color: #fff;
-     background: #2742b0;
-     font-size: 2rem;
-     margin: 1rem 0;
- 
- }
- 
- .box-container .box h3 {
-     font-size: 20px;
-     color: #fff;
- 
- }
- 
- .box-container .box p {
-     padding: 0 15px;
-     font-size: 16px;
- }
- 
- .about {
-     background: #171717;
- }
- 
- .price {
-     background: url(home.jpg) no-repeat center;
-     background-attachment: fixed;
-     background-size: cover;
-     text-align: center;
- }
- 
- 
- .contact {
-     padding-top: 20px;
-     background: #171717;
-     padding-bottom: 0;
- }
- 
- .circular--square {
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
-  }
- 
- @media (max-width: 768px) {
- 
-     .title {
-         margin-bottom: 0;
-         font-size: 20px;
-     }
- 
-     .sau {
-         height: 100vh;
-     }
- 
-     .navbar {
-         display: none;
-     } 
+    0% { margin-left: 0%;}
+    10% { margin-left: 0%;}
+
+    20% { margin-left: -100%;}
+    30% { margin-left: -100%;}
+
+    40% { margin-left: -200%;}
+    50% { margin-left: -200%;}
+
+    60% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+@media (max-width:991px) {
+    body {
+        padding: 30px;
+    }
     
-     
- }
- 
+    .slider-box {
+        width: 100%;
+    }
+
+    .texto {
+        top: 50px;
+        padding: 0 25px;
+    }
+
+    .texto h2 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+}
